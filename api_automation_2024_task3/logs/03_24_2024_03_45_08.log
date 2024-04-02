@@ -1,0 +1,167 @@
+2024-03-24 03:45:08,395 UTC DEBUG    test_tracks      Setup Class method
+2024-03-24 03:45:08,410 UTC INFO     conftest         -----Test 'test_get_several_tracks' STARTED.-----
+2024-03-24 03:45:08,418 UTC INFO     test_tracks      The list of tracks ids: {'2MLHyLy5z5l5YRp7momlgw,6qUEOWqOzu1rLPUPQ1ECpx'}
+2024-03-24 03:45:08,424 UTC INFO     test_tracks      The URL of tracks ids: https://api.spotify.com/v1/tracks?ids=2MLHyLy5z5l5YRp7momlgw,6qUEOWqOzu1rLPUPQ1ECpx
+2024-03-24 03:45:09,296 UTC DEBUG    helpers.rest_client  Status code 200 
+2024-03-24 03:45:09,305 UTC DEBUG    helpers.rest_client  Response Content {
+  "tracks" : [ {
+    "album" : {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3jOstUTkEu2JkjvRdBA5Gu"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3jOstUTkEu2JkjvRdBA5Gu",
+        "id" : "3jOstUTkEu2JkjvRdBA5Gu",
+        "name" : "Weezer",
+        "type" : "artist",
+        "uri" : "spotify:artist:3jOstUTkEu2JkjvRdBA5Gu"
+      } ],
+      "available_markets" : [ "AR", "AU", "AT", "BE", "BO", "BR", "BG", "CA", "CL", "CO", "CR", "CY", "CZ", "DK", "DO", "DE", "EC", "EE", "SV", "FI", "FR", "GR", "GT", "HN", "HK", "HU", "IS", "IT", "LV", "LT", "LU", "MY", "MT", "MX", "NL", "NZ", "NI", "NO", "PA", "PY", "PE", "PH", "PL", "PT", "SG", "SK", "ES", "SE", "CH", "TW", "TR", "UY", "US", "AD", "LI", "MC", "ID", "JP", "TH", "VN", "RO", "IL", "ZA", "SA", "AE", "BH", "QA", "OM", "KW", "EG", "MA", "DZ", "TN", "LB", "JO", "PS", "IN", "BY", "KZ", "MD", "UA", "AL", "BA", "HR", "ME", "MK", "RS", "SI", "KR", "BD", "PK", "LK", "GH", "KE", "NG", "TZ", "UG", "AG", "AM", "BS", "BB", "BZ", "BT", "BW", "BF", "CV", "CW", "DM", "FJ", "GM", "GD", "GW", "GY", "HT", "JM", "KI", "LS", "LR", "MW", "MV", "ML", "MH", "FM", "NA", "NR", "NE", "PW", "PG", "WS", "ST", "SN", "SC", "SL", "SB", "KN", "LC", "VC", "SR", "TL", "TO", "TT", "TV", "AZ", "BN", "BI", "KH", "CM", "TD", "KM", "GQ", "SZ", "GA", "GN", "KG", "LA", "MO", "MR", "MN", "NP", "RW", "TG", "UZ", "ZW", "BJ", "MG", "MU", "MZ", "AO", "CI", "DJ", "ZM", "CD", "CG", "IQ", "LY", "TJ", "VE", "XK" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/2OBSz5Nlto0Q5CtYPzPY7c"
+      },
+      "href" : "https://api.spotify.com/v1/albums/2OBSz5Nlto0Q5CtYPzPY7c",
+      "id" : "2OBSz5Nlto0Q5CtYPzPY7c",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/ab67616d0000b2731e0dc5baaabda304b0ad1815",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/ab67616d00001e021e0dc5baaabda304b0ad1815",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/ab67616d000048511e0dc5baaabda304b0ad1815",
+        "width" : 64
+      } ],
+      "name" : "Weezer",
+      "release_date" : "2001-05-15",
+      "release_date_precision" : "day",
+      "total_tracks" : 10,
+      "type" : "album",
+      "uri" : "spotify:album:2OBSz5Nlto0Q5CtYPzPY7c"
+    },
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3jOstUTkEu2JkjvRdBA5Gu"
+      },
+      "href" : "https://api.spotify.com/v1/artists/3jOstUTkEu2JkjvRdBA5Gu",
+      "id" : "3jOstUTkEu2JkjvRdBA5Gu",
+      "name" : "Weezer",
+      "type" : "artist",
+      "uri" : "spotify:artist:3jOstUTkEu2JkjvRdBA5Gu"
+    } ],
+    "available_markets" : [ "AR", "AU", "AT", "BE", "BO", "BR", "BG", "CA", "CL", "CO", "CR", "CY", "CZ", "DK", "DO", "DE", "EC", "EE", "SV", "FI", "FR", "GR", "GT", "HN", "HK", "HU", "IS", "IT", "LV", "LT", "LU", "MY", "MT", "MX", "NL", "NZ", "NI", "NO", "PA", "PY", "PE", "PH", "PL", "PT", "SG", "SK", "ES", "SE", "CH", "TW", "TR", "UY", "US", "AD", "LI", "MC", "ID", "JP", "TH", "VN", "RO", "IL", "ZA", "SA", "AE", "BH", "QA", "OM", "KW", "EG", "MA", "DZ", "TN", "LB", "JO", "PS", "IN", "BY", "KZ", "MD", "UA", "AL", "BA", "HR", "ME", "MK", "RS", "SI", "KR", "BD", "PK", "LK", "GH", "KE", "NG", "TZ", "UG", "AG", "AM", "BS", "BB", "BZ", "BT", "BW", "BF", "CV", "CW", "DM", "FJ", "GM", "GD", "GW", "GY", "HT", "JM", "KI", "LS", "LR", "MW", "MV", "ML", "MH", "FM", "NA", "NR", "NE", "PW", "PG", "WS", "ST", "SN", "SC", "SL", "SB", "KN", "LC", "VC", "SR", "TL", "TO", "TT", "TV", "AZ", "BN", "BI", "KH", "CM", "TD", "KM", "GQ", "SZ", "GA", "GN", "KG", "LA", "MO", "MR", "MN", "NP", "RW", "TG", "UZ", "ZW", "BJ", "MG", "MU", "MZ", "AO", "CI", "DJ", "ZM", "CD", "CG", "IQ", "LY", "TJ", "VE", "XK" ],
+    "disc_number" : 1,
+    "duration_ms" : 200306,
+    "explicit" : false,
+    "external_ids" : {
+      "isrc" : "USIR10110358"
+    },
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/track/2MLHyLy5z5l5YRp7momlgw"
+    },
+    "href" : "https://api.spotify.com/v1/tracks/2MLHyLy5z5l5YRp7momlgw",
+    "id" : "2MLHyLy5z5l5YRp7momlgw",
+    "is_local" : false,
+    "name" : "Island In The Sun",
+    "popularity" : 80,
+    "preview_url" : null,
+    "track_number" : 4,
+    "type" : "track",
+    "uri" : "spotify:track:2MLHyLy5z5l5YRp7momlgw"
+  }, {
+    "album" : {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3CQIn7N5CuRDP8wEI7FiDA"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3CQIn7N5CuRDP8wEI7FiDA",
+        "id" : "3CQIn7N5CuRDP8wEI7FiDA",
+        "name" : "Run–D.M.C.",
+        "type" : "artist",
+        "uri" : "spotify:artist:3CQIn7N5CuRDP8wEI7FiDA"
+      } ],
+      "available_markets" : [ "AR", "AU", "AT", "BE", "BO", "BR", "BG", "CA", "CL", "CO", "CR", "CY", "CZ", "DK", "DO", "DE", "EC", "EE", "SV", "FI", "FR", "GR", "GT", "HN", "HK", "HU", "IS", "IE", "IT", "LV", "LT", "LU", "MY", "MT", "MX", "NL", "NZ", "NI", "NO", "PA", "PY", "PE", "PH", "PL", "PT", "SG", "SK", "ES", "SE", "CH", "TW", "TR", "UY", "US", "GB", "AD", "LI", "MC", "ID", "JP", "TH", "VN", "RO", "IL", "ZA", "SA", "AE", "BH", "QA", "OM", "KW", "EG", "MA", "DZ", "TN", "LB", "JO", "PS", "IN", "BY", "KZ", "MD", "UA", "AL", "BA", "HR", "ME", "MK", "RS", "SI", "KR", "BD", "PK", "LK", "GH", "KE", "NG", "TZ", "UG", "AG", "AM", "BS", "BB", "BZ", "BT", "BW", "BF", "CV", "CW", "DM", "FJ", "GM", "GE", "GD", "GW", "GY", "HT", "JM", "KI", "LS", "LR", "MW", "MV", "ML", "MH", "FM", "NA", "NR", "NE", "PW", "PG", "PR", "WS", "SM", "ST", "SN", "SC", "SL", "SB", "KN", "LC", "VC", "SR", "TL", "TO", "TT", "TV", "VU", "AZ", "BN", "BI", "KH", "CM", "TD", "KM", "GQ", "SZ", "GA", "GN", "KG", "LA", "MO", "MR", "MN", "NP", "RW", "TG", "UZ", "ZW", "BJ", "MG", "MU", "MZ", "AO", "CI", "DJ", "ZM", "CD", "CG", "IQ", "LY", "TJ", "VE", "ET", "XK" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/7AFsTiojVaB2I58oZ1tMRg"
+      },
+      "href" : "https://api.spotify.com/v1/albums/7AFsTiojVaB2I58oZ1tMRg",
+      "id" : "7AFsTiojVaB2I58oZ1tMRg",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/ab67616d0000b273894ae4df775c6b47438991af",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/ab67616d00001e02894ae4df775c6b47438991af",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/ab67616d00004851894ae4df775c6b47438991af",
+        "width" : 64
+      } ],
+      "name" : "Raising Hell",
+      "release_date" : "1986-05-15",
+      "release_date_precision" : "day",
+      "total_tracks" : 12,
+      "type" : "album",
+      "uri" : "spotify:album:7AFsTiojVaB2I58oZ1tMRg"
+    },
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3CQIn7N5CuRDP8wEI7FiDA"
+      },
+      "href" : "https://api.spotify.com/v1/artists/3CQIn7N5CuRDP8wEI7FiDA",
+      "id" : "3CQIn7N5CuRDP8wEI7FiDA",
+      "name" : "Run–D.M.C.",
+      "type" : "artist",
+      "uri" : "spotify:artist:3CQIn7N5CuRDP8wEI7FiDA"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/7Ey4PD4MYsKc5I2dolUwbH"
+      },
+      "href" : "https://api.spotify.com/v1/artists/7Ey4PD4MYsKc5I2dolUwbH",
+      "id" : "7Ey4PD4MYsKc5I2dolUwbH",
+      "name" : "Aerosmith",
+      "type" : "artist",
+      "uri" : "spotify:artist:7Ey4PD4MYsKc5I2dolUwbH"
+    } ],
+    "available_markets" : [ "AR", "AU", "AT", "BE", "BO", "BR", "BG", "CA", "CL", "CO", "CR", "CY", "CZ", "DK", "DO", "DE", "EC", "EE", "SV", "FI", "FR", "GR", "GT", "HN", "HK", "HU", "IS", "IE", "IT", "LV", "LT", "LU", "MY", "MT", "MX", "NL", "NZ", "NI", "NO", "PA", "PY", "PE", "PH", "PL", "PT", "SG", "SK", "ES", "SE", "CH", "TW", "TR", "UY", "US", "GB", "AD", "LI", "MC", "ID", "JP", "TH", "VN", "RO", "IL", "ZA", "SA", "AE", "BH", "QA", "OM", "KW", "EG", "MA", "DZ", "TN", "LB", "JO", "PS", "IN", "BY", "KZ", "MD", "UA", "AL", "BA", "HR", "ME", "MK", "RS", "SI", "KR", "BD", "PK", "LK", "GH", "KE", "NG", "TZ", "UG", "AG", "AM", "BS", "BB", "BZ", "BT", "BW", "BF", "CV", "CW", "DM", "FJ", "GM", "GE", "GD", "GW", "GY", "HT", "JM", "KI", "LS", "LR", "MW", "MV", "ML", "MH", "FM", "NA", "NR", "NE", "PW", "PG", "WS", "SM", "ST", "SN", "SC", "SL", "SB", "KN", "LC", "VC", "SR", "TL", "TO", "TT", "TV", "VU", "AZ", "BN", "BI", "KH", "CM", "TD", "KM", "GQ", "SZ", "GA", "GN", "KG", "LA", "MO", "MR", "MN", "NP", "RW", "TG", "UZ", "ZW", "BJ", "MG", "MU", "MZ", "AO", "CI", "DJ", "ZM", "CD", "CG", "IQ", "LY", "TJ", "VE", "ET", "XK" ],
+    "disc_number" : 1,
+    "duration_ms" : 310386,
+    "explicit" : false,
+    "external_ids" : {
+      "isrc" : "USAR19900334"
+    },
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/track/6qUEOWqOzu1rLPUPQ1ECpx"
+    },
+    "href" : "https://api.spotify.com/v1/tracks/6qUEOWqOzu1rLPUPQ1ECpx",
+    "id" : "6qUEOWqOzu1rLPUPQ1ECpx",
+    "is_local" : false,
+    "name" : "Walk This Way (feat. Aerosmith)",
+    "popularity" : 69,
+    "preview_url" : "https://p.scdn.co/mp3-preview/434a86dcf5206c271a08b63481b87e32a5d4b648?cid=06fa290127c84445be2944ebc5ed4040",
+    "track_number" : 4,
+    "type" : "track",
+    "uri" : "spotify:track:6qUEOWqOzu1rLPUPQ1ECpx"
+  } ]
+} 
+2024-03-24 03:45:09,313 UTC INFO     helpers.rest_client  Response headers: {'content-type': 'application/json; charset=utf-8', 'cache-control': 'public, max-age=7200', 'x-robots-tag': 'noindex, nofollow', 'access-control-allow-origin': '*', 'access-control-allow-headers': 'Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token', 'access-control-allow-methods': 'GET, POST, OPTIONS, PUT, DELETE, PATCH', 'access-control-allow-credentials': 'true', 'access-control-max-age': '604800', 'content-encoding': 'gzip', 'strict-transport-security': 'max-age=31536000', 'x-content-type-options': 'nosniff', 'date': 'Sun, 24 Mar 2024 07:45:08 GMT', 'server': 'envoy', 'Via': 'HTTP/2 edgeproxy, 1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'Transfer-Encoding': 'chunked'}
+2024-03-24 03:45:09,322 UTC INFO     conftest         -----Test 'test_get_several_tracks' COMPLETED.-----
+2024-03-24 03:45:09,330 UTC INFO     conftest         -----Test 'test_save_several_tracks' STARTED.-----
+2024-03-24 03:45:09,337 UTC INFO     test_tracks      The list of tracks ids: {'1TEZWG1FdjzDdercCguTwj,3z8h0TU7ReDPLIbEnYhWZb'}
+2024-03-24 03:45:09,346 UTC INFO     test_tracks      The URL of save tracks ids: https://api.spotify.com/v1/me/tracks?ids=1TEZWG1FdjzDdercCguTwj,3z8h0TU7ReDPLIbEnYhWZb
+2024-03-24 03:45:09,587 UTC DEBUG    helpers.rest_client  Status code 403 
+2024-03-24 03:45:09,597 UTC DEBUG    helpers.rest_client  Response Content {
+  "error" : {
+    "status" : 403,
+    "message" : "Forbidden."
+  }
+} 
+2024-03-24 03:45:09,606 UTC ERROR    helpers.rest_client  HTTP error: 403 Client Error: Forbidden for url: https://api.spotify.com/v1/me/tracks?ids=1TEZWG1FdjzDdercCguTwj,3z8h0TU7ReDPLIbEnYhWZb
+2024-03-24 03:45:09,729 UTC INFO     conftest         -----Test 'test_save_several_tracks' COMPLETED.-----

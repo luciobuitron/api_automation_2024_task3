@@ -1,0 +1,50 @@
+2024-04-01 23:06:25,113 UTC INFO     conftest         ---------- TEST 'test_get_user_playlists' STARTED.---------- 
+2024-04-01 23:06:26,055 UTC DEBUG    helpers.rest_client  Status code 401 
+2024-04-01 23:06:26,063 UTC DEBUG    helpers.rest_client  Response Content {
+  "error": {
+    "status": 401,
+    "message": "The access token expired"
+  }
+} 
+2024-04-01 23:06:26,069 UTC ERROR    helpers.rest_client  HTTP error: 401 Client Error: Unauthorized for url: https://api.spotify.com/v1/users/312vih3vepthrzoqcnalign7ub74/playlists
+2024-04-01 23:06:26,436 UTC INFO     conftest         ----------  TEST'test_get_user_playlists' COMPLETED.---------- 
+2024-04-01 23:06:26,443 UTC INFO     conftest         ---------- TEST 'test_create_playlist' STARTED.---------- 
+2024-04-01 23:06:26,668 UTC DEBUG    helpers.rest_client  Status code 401 
+2024-04-01 23:06:26,674 UTC DEBUG    helpers.rest_client  Response Content {
+  "error": {
+    "status": 401,
+    "message": "The access token expired"
+  }
+} 
+2024-04-01 23:06:26,680 UTC ERROR    helpers.rest_client  HTTP error: 401 Client Error: Unauthorized for url: https://api.spotify.com/v1/users/312vih3vepthrzoqcnalign7ub74/playlists
+2024-04-01 23:06:26,694 UTC INFO     conftest         ----------  TEST'test_create_playlist' COMPLETED.---------- 
+2024-04-01 23:06:27,637 UTC DEBUG    helpers.rest_client  Status code 401 
+2024-04-01 23:06:27,645 UTC DEBUG    helpers.rest_client  Response Content {
+  "error": {
+    "status": 401,
+    "message": "The access token expired"
+  }
+} 
+2024-04-01 23:06:27,651 UTC ERROR    helpers.rest_client  HTTP error: 401 Client Error: Unauthorized for url: https://api.spotify.com/v1/users/312vih3vepthrzoqcnalign7ub74/playlists
+2024-04-01 23:06:27,673 UTC DEBUG    conftest         Create playlist From Fixture
+2024-04-01 23:06:28,777 UTC DEBUG    helpers.rest_client  Status code 401 
+2024-04-01 23:06:28,784 UTC DEBUG    helpers.rest_client  Response Content {
+  "error": {
+    "status": 401,
+    "message": "The access token expired"
+  }
+} 
+2024-04-01 23:06:28,791 UTC ERROR    helpers.rest_client  HTTP error: 401 Client Error: Unauthorized for url: https://api.spotify.com/v1/users/312vih3vepthrzoqcnalign7ub74/playlists
+2024-04-01 23:06:28,800 UTC INFO     conftest         ---------- TEST 'test_add_item_playlist' STARTED.---------- 
+2024-04-01 23:06:28,814 UTC INFO     conftest         ----------  TEST'test_add_item_playlist' COMPLETED.---------- 
+2024-04-01 23:06:28,821 UTC DEBUG    conftest         Create playlist From Fixture
+2024-04-01 23:06:29,904 UTC DEBUG    helpers.rest_client  Status code 401 
+2024-04-01 23:06:29,913 UTC DEBUG    helpers.rest_client  Response Content {
+  "error": {
+    "status": 401,
+    "message": "The access token expired"
+  }
+} 
+2024-04-01 23:06:29,919 UTC ERROR    helpers.rest_client  HTTP error: 401 Client Error: Unauthorized for url: https://api.spotify.com/v1/users/312vih3vepthrzoqcnalign7ub74/playlists
+2024-04-01 23:06:29,928 UTC INFO     conftest         ---------- TEST 'test_remove_item_playlist' STARTED.---------- 
+2024-04-01 23:06:29,940 UTC INFO     conftest         ----------  TEST'test_remove_item_playlist' COMPLETED.---------- 

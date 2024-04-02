@@ -1,0 +1,13 @@
+2024-03-25 04:29:26,080 UTC DEBUG    test_playlists   Setup Class method
+2024-03-25 04:29:26,096 UTC DEBUG    conftest         Generating first the Access Token Client ID and Client Secret
+2024-03-25 04:29:27,127 UTC INFO     conftest         -----Test 'test_get_user_playlists' STARTED.-----
+2024-03-25 04:29:28,051 UTC INFO     test_playlists   The content of the ran URL for authorization: https://accounts.spotify.com/es/login?continue=https%3A%2F%2Faccounts.spotify.com%2Fauthorize%3Fscope%3Dplaylist_modify_public%26response_type%3Dcode%26redirect_uri%3Duri%3Dhttp%253A%252F%252Flocalhost%253A3000%26client_id%3D06fa290127c84445be2944ebc5ed4040
+2024-03-25 04:29:28,061 UTC INFO     conftest         -----Test 'test_get_user_playlists' COMPLETED.-----
+2024-03-25 04:29:28,071 UTC INFO     conftest         -----Test 'test_create_playlist' STARTED.-----
+2024-03-25 04:29:28,496 UTC INFO     conftest         -----Test 'test_create_playlist' COMPLETED.-----
+2024-03-25 04:29:28,503 UTC DEBUG    conftest         Create playlist From Fixture
+2024-03-25 04:29:29,423 UTC INFO     conftest         -----Test 'test_add_item_playlist' STARTED.-----
+2024-03-25 04:29:29,784 UTC INFO     conftest         -----Test 'test_add_item_playlist' COMPLETED.-----
+2024-03-25 04:29:29,790 UTC DEBUG    conftest         Create playlist From Fixture
+2024-03-25 04:29:30,726 UTC INFO     conftest         -----Test 'test_remove_item_playlist' STARTED.-----
+2024-03-25 04:29:31,047 UTC INFO     conftest         -----Test 'test_remove_item_playlist' COMPLETED.-----

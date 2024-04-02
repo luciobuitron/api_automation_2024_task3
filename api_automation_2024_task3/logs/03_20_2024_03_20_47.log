@@ -1,0 +1,3 @@
+2024-03-20 03:20:47,311 UTC DEBUG    test_playlists   Setup Class method
+2024-03-20 03:20:48,094 UTC INFO     test_playlists   Response from get user playlists: {'error': {'status': 401, 'message': 'The access token expired'}}
+2024-03-20 03:20:48,100 UTC INFO     test_playlists   Status code: 401

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="11" time="11.812" timestamp="2024-04-01T22:36:25.509146" hostname="LBUITRONP-DH02"><testcase classname="spotify_api.playlists.test_playlists.TestPlaylists" name="test_get_user_playlists" time="1.223" /><testcase classname="spotify_api.playlists.test_playlists.TestPlaylists" name="test_create_playlist" time="0.336" /><testcase classname="spotify_api.playlists.test_playlists.TestPlaylists" name="test_create_playlist_duplicated" time="1.690" /><testcase classname="spotify_api.playlists.test_playlists.TestPlaylists" name="test_add_item_playlist" time="1.517" /><testcase classname="spotify_api.playlists.test_playlists.TestPlaylists" name="test_remove_item_playlist" time="1.377" /><testcase classname="spotify_api.tracks.test_tracks.TestTracks" name="test_get_several_tracks" time="1.050" /><testcase classname="spotify_api.tracks.test_tracks.TestTracks" name="test_get_saved_tracks_limit" time="0.250"><failure message="AssertionError: Wrong status code, expected 429&#10;assert 403 == 429">self = &lt;test_tracks.TestTracks object at 0x000001D20A893A70&gt;, log_test_name = None
+
+    @pytest.mark.functional
+    def test_get_saved_tracks_limit(self, log_test_name):
+        """
+        Test get saved tracks
+        Get a list of the songs saved in the current Spotify user's 'Your Music' library.
+        """
+        url_saved_tracks = f"{self.url_tracks_me}?limit={LIMIT_TRACKS}"
+        LOGGER.info("The URL of saved tracks over limit allowed: %s", url_saved_tracks)
+    
+        response = self.rest_client.request("get", url=url_saved_tracks)
+        LOGGER.info("The saved tracks: %s", response)
+    
+&gt;       assert response["status_code"] == 429, "Wrong status code, expected 429"
+E       AssertionError: Wrong status code, expected 429
+E       assert 403 == 429
+
+spotify_api\tracks\test_tracks.py:48: AssertionError</failure></testcase><testcase classname="spotify_api.tracks.test_tracks.TestTracks" name="test_save_several_tracks" time="0.247"><failure message="AssertionError: Wrong status code, expected 200&#10;assert 403 == 200">self = &lt;test_tracks.TestTracks object at 0x000001D20A893BC0&gt;, log_test_name = None
+
+    @pytest.mark.acceptance
+    def test_save_several_tracks(self, log_test_name):
+        """
+        Test save several tracks
+        Save one or more tracks to the current user's 'Your Music' library.
+        """
+        save_track_ids = {"1TEZWG1FdjzDdercCguTwj,3z8h0TU7ReDPLIbEnYhWZb"}
+        LOGGER.info("The list of tracks ids: %s", save_track_ids)
+        delimiter = ','
+    
+        save_track_ids_plain = delimiter.join(save_track_ids)
+        save_url_track_ids = f"{URL_SPOTIFY}/me/tracks?ids={save_track_ids_plain}"
+        LOGGER.info("The URL of save tracks ids: %s", save_url_track_ids)
+    
+        response = self.rest_client.request("put", url=save_url_track_ids)
+    
+&gt;       assert response["status_code"] == 200, "Wrong status code, expected 200"
+E       AssertionError: Wrong status code, expected 200
+E       assert 403 == 200
+
+spotify_api\tracks\test_tracks.py:66: AssertionError</failure></testcase><testcase classname="spotify_api.users.test_users.TestUsers" name="test_get_user_profiles" time="0.941" /><testcase classname="spotify_api.users.test_users.TestUsers" name="test_follow_playlist" time="1.346" /><testcase classname="spotify_api.users.test_users.TestUsers" name="test_unfollow_playlist" time="1.415" /></testsuite></testsuites>
